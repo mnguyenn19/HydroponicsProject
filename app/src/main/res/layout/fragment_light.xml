@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Light">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/light_control"
+        android:textSize="40dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginRight="50dp"
+        android:textStyle="bold"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginLeft="60dp"
+        android:text="On"
+        android:id="@+id/LightOn"
+        android:background="@color/cAccent"
+        android:textStyle="bold" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginLeft="200dp"
+        android:text="Off"
+        android:id="@+id/LightOff"
+        android:background="@color/cAccent"
+        android:textStyle="bold"/>
+
+    <Button
+        android:id="@+id/LightBack"
+        android:layout_width="141dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="200dp"
+        android:layout_marginTop="550dp"
+        android:layout_marginRight="100dp"
+        android:background="@color/cAccent"
+        android:text="Back"
+        android:textStyle="bold" />
+
+
+</RelativeLayout>
