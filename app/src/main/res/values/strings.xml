@@ -11,4 +11,39 @@
     <string name="account">Account</string>
     <string name="help">Help</string>
     <string name="ponx_update">PonX Update</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="water_control">Water Control</string>
+
+    <string name="elementName_N">Nitrogen</string>
+    <string name="elementName_P">Phorphous</string>
+    <string name="elementName_K">Potassium</string>
+    <string name="elementName_H">Water Levels</string>
+    <string name="elementShort_N">N</string>
+    <string name="elementShort_P">P</string>
+    <string name="elementShort_K">K</string>
+    <string name="elementShort_H">H2O</string>
+
+    <string name="light_control">Light Control</string>
+
+    <string-array name="elements_full_name">
+        <item>Water Level</item>
+        <item>Nitrogen</item>
+        <item>Phosphorus</item>
+        <item>Potassium</item>
+    </string-array>
+
+    <string-array name="elements_abrev_name">
+        <item>H2O</item>
+        <item>N</item>
+        <item>P</item>
+        <item>K</item>
+    </string-array>
+
+    <string-array name="elements_descrip">
+        <item>H20 How to pass info here from pi</item>
+        <item>N How to pass info here</item>
+        <item>P How to pass info here</item>
+        <item>K How to pass info here</item>
+    </string-array>
 </resources>
