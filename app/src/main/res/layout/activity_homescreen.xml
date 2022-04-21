@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/bgimg"
+    android:background="@color/cDivider"
     tools:context=".homescreen">
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -123,7 +123,7 @@
                     android:layout_margin="8dp"
                     android:contentDescription="@string/app_name"
                     android:padding="8dp"
-                    android:src="@drawable/ponxlogo" />
+                    android:src="@drawable/ponxplant" />
 
                 <TextView
                     android:layout_width="match_parent"
@@ -155,7 +155,7 @@
                     android:layout_margin="8dp"
                     android:contentDescription="@string/app_name"
                     android:padding="8dp"
-                    android:src="@drawable/ponxlogo" />
+                    android:src="@drawable/ponxlw" />
 
                 <TextView
                     android:layout_width="match_parent"
@@ -187,7 +187,7 @@
                     android:layout_margin="8dp"
                     android:contentDescription="@string/app_name"
                     android:padding="8dp"
-                    android:src="@drawable/ponxlogo" />
+                    android:src="@drawable/ponxsched" />
 
                 <TextView
                     android:layout_width="match_parent"
@@ -219,7 +219,7 @@
                     android:layout_margin="8dp"
                     android:contentDescription="@string/app_name"
                     android:padding="8dp"
-                    android:src="@drawable/ponxlogo" />
+                    android:src="@drawable/ponxmonitor" />
 
                 <TextView
                     android:layout_width="match_parent"
