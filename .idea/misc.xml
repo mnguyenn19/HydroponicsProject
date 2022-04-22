@@ -4,6 +4,7 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/deare/AndroidStudioProjects/HPonX/app/src/main/res/drawable/headerbackground.xml" value="0.198" />
+        <entry key="..\:/Users/deare/AndroidStudioProjects/HPonX/app/src/main/res/drawable/ic_baseline_account.xml" value="0.155" />
         <entry key="..\:/Users/deare/AndroidStudioProjects/HPonX/app/src/main/res/drawable/ic_baseline_help.xml" value="0.125" />
         <entry key="..\:/Users/deare/AndroidStudioProjects/HPonX/app/src/main/res/drawable/ic_launcher_background.xml" value="0.198" />
         <entry key="..\:/Users/deare/AndroidStudioProjects/HPonX/app/src/main/res/drawable/ic_search.xml" value="0.22" />
@@ -17,7 +18,7 @@
         <entry key="..\:/Users/deare/AndroidStudioProjects/HPonX/app/src/main/res/layout/activity_splashscreen.xml" value="0.17708333333333334" />
         <entry key="..\:/Users/deare/AndroidStudioProjects/HPonX/app/src/main/res/layout/fragment_light.xml" value="0.264" />
         <entry key="..\:/Users/deare/AndroidStudioProjects/HPonX/app/src/main/res/layout/fragment_water.xml" value="0.2" />
-        <entry key="..\:/Users/deare/AndroidStudioProjects/HPonX/app/src/main/res/layout/recycleview_rows.xml" value="0.1" />
+        <entry key="..\:/Users/deare/AndroidStudioProjects/HPonX/app/src/main/res/layout/recycleview_rows.xml" value="0.2" />
         <entry key="..\:/Users/deare/AndroidStudioProjects/HPonX/app/src/main/res/menu/navigation_menu.xml" value="0.20625" />
       </map>
     </option>

@@ -16,9 +16,10 @@
     <string name="water_control">Water Control</string>
 
     <string name="elementName_N">Nitrogen</string>
-    <string name="elementName_P">Phorphous</string>
+    <string name="elementName_P">Phosphorus</string>
     <string name="elementName_K">Potassium</string>
-    <string name="elementName_H">Water Levels</string>
+    <string name="elementName_H">Moisture Levels</string>
+    <string name="elementValue">#</string>
     <string name="elementShort_N">N</string>
     <string name="elementShort_P">P</string>
     <string name="elementShort_K">K</string>
@@ -27,7 +28,7 @@
     <string name="light_control">Light Control</string>
 
     <string-array name="elements_full_name">
-        <item>Water Level</item>
+        <item>Moisture Level</item>
         <item>Nitrogen</item>
         <item>Phosphorus</item>
         <item>Potassium</item>
@@ -41,9 +42,9 @@
     </string-array>
 
     <string-array name="elements_descrip">
-        <item>H20 How to pass info here from pi</item>
-        <item>N How to pass info here</item>
-        <item>P How to pass info here</item>
-        <item>K How to pass info here</item>
+        <item>Value of ...</item>
+        <item>N..</item>
+        <item>P..</item>
+        <item>K..</item>
     </string-array>
 </resources>
