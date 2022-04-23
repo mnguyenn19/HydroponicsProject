@@ -26,6 +26,11 @@
     <string name="elementShort_H">H2O</string>
 
     <string name="light_control">Light Control</string>
+    <string name="select_one">Select one:</string>
+    <string name="medium_water">Medium Water</string>
+    <string name="lightly_water">Lightly Water</string>
+    <string name="heavy_water">Heavy Water</string>
+    <string name="back">Back</string>
 
     <string-array name="elements_full_name">
         <item>Moisture Level</item>
