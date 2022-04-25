@@ -6,9 +6,13 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+
 public class Schedule extends AppCompatActivity {
 
-    Button schedLight, schedMedium, schedHeavy, schedBack;
+    Button schedLight, schedMedium, schedHeavy;
+    private final DatabaseReference databaseReference = FirebaseDatabase.getInstance().getReference();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -18,12 +22,25 @@ public class Schedule extends AppCompatActivity {
         schedLight = findViewById(R.id.LevelALight);
         schedMedium = findViewById(R.id.LevelBMedium);
         schedHeavy = findViewById(R.id.LevelCHeavy);
-        //schedBack = findViewById(R.id.LevelBack);
 
-        schedBack.setOnClickListener(new View.OnClickListener() {
+        schedLight.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                databaseReference.child("scheduleData").child("Intensity").setValue("low");
+            }
+        });
 
+        schedMedium.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                databaseReference.child("scheduleData").child("Intensity").setValue("medium");
+            }
+        });
+
+        schedHeavy.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                databaseReference.child("scheduleData").child("Intensity").setValue("high");
             }
         });
     }

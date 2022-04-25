@@ -12,6 +12,7 @@
         android:theme="@style/Theme.HPonX">
         <activity
             android:name=".Schedule"
+            android:parentActivityName=".homescreen"
             android:exported="false" />
         <activity
             android:name=".lightandwater"
