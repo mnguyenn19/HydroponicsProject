@@ -208,6 +208,7 @@
                 android:gravity="center"
                 android:orientation="vertical"
                 android:padding="15dp"
+                android:clickable="true"
                 app:layout_constraintDimensionRatio="H,1:1"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toEndOf="@+id/layoutOne"

@@ -1,91 +1,62 @@
 package com.example.hponx;
 
-import android.content.Context;
-import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.google.firebase.database.DataSnapshot;
-import com.google.firebase.database.DatabaseError;
-import com.google.firebase.database.DatabaseReference;
-import com.google.firebase.database.FirebaseDatabase;
-import com.google.firebase.database.ValueEventListener;
+import com.bumptech.glide.Glide;
+import com.firebase.ui.database.FirebaseRecyclerAdapter;
+import com.firebase.ui.database.FirebaseRecyclerOptions;
 
-import java.util.ArrayList;
+public class NPK_RecycleViewAdapter extends FirebaseRecyclerAdapter<npk_model,NPK_RecycleViewAdapter.myViewHolder> {
 
-public class NPK_RecycleViewAdapter<onCreate> extends RecyclerView.Adapter<NPK_RecycleViewAdapter.MyViewHolder> {
-    //private final RViewInterface rViewInterface;
-    Context context;
-    ArrayList<ElementsModel> elementsModels;
+    /**
+     * Initialize a {@link RecyclerView.Adapter} that listens to a Firebase query. See
+     * {@link FirebaseRecyclerOptions} for configuration options.
+     *
+     * @param options
+     */
+    public NPK_RecycleViewAdapter(@NonNull FirebaseRecyclerOptions<npk_model> options) {
+        super(options);
+    }
 
-    //public NPK_RecycleViewAdapter(Context context, ArrayList<ElementsModel> elementsModels,
-    //                              RViewInterface rViewInterface){
+    @Override
+    protected void onBindViewHolder(@NonNull myViewHolder holder, int position, @NonNull npk_model model) {
+        holder.eFullName.setText(model.getName());
+        holder.eAbrevName.setText((model.getAbrev()));
+        holder.standAloneValue.setText(model.getValue());
 
-    public NPK_RecycleViewAdapter(Context context, ArrayList<ElementsModel> elementsModels){
-        this.context = context;
-        this.elementsModels = elementsModels;
-        //this.rViewInterface = rViewInterface;
+        Glide.with(holder.imageView.getContext())
+                .load(model.getImage())
+                .placeholder((com.firebase.ui.database.R.drawable.common_google_signin_btn_icon_dark))
+                .error(com.firebase.ui.database.R.drawable.common_google_signin_btn_icon_dark_normal)
+                .into(holder.imageView);
     }
 
     @NonNull
     @Override
-    public NPK_RecycleViewAdapter.MyViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        LayoutInflater inflater = LayoutInflater.from(context);
-        View view = inflater.inflate(R.layout.recycleview_rows, parent, false);
-        //return new NPK_RecycleViewAdapter.MyViewHolder(view, rViewInterface);
-        return new NPK_RecycleViewAdapter.MyViewHolder(view);
+    public myViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.recycleview_rows,parent,false);
+        return new myViewHolder(view);
     }
 
-    @Override
-    public void onBindViewHolder(@NonNull NPK_RecycleViewAdapter.MyViewHolder holder, int position) {
-        holder.eFullName.setText(elementsModels.get(position).getElementName());
-        holder.eAbrevName.setText(elementsModels.get(position).getElementAbbreviation());
-        holder.imageView.setImageResource(elementsModels.get(position).getImage());
-        //holder.eDescription.setText(elementsModels.get(position).getDescription());
-    }
+    class myViewHolder extends RecyclerView.ViewHolder{
 
-    @Override
-    public int getItemCount() {
-        return elementsModels.size();
-    }
-
-
-    public static class MyViewHolder extends RecyclerView.ViewHolder{
         ImageView imageView;
-        TextView eFullName, eAbrevName;
-        //TextView eDescription;
-        TextView standAloneValue;
+        TextView eAbrevName,eFullName,standAloneValue;
 
-        //public MyViewHolder(@NonNull View itemView, RViewInterface rViewInterface) {
-        public MyViewHolder(@NonNull View itemView) {
+        public myViewHolder(@NonNull View itemView) {
             super(itemView);
 
             imageView = itemView.findViewById(R.id.imageView);
             eFullName = itemView.findViewById(R.id.textViewTop);
             eAbrevName = itemView.findViewById(R.id.textViewBottomLeft);
-            //eDescription = itemView.findViewById(R.id.textViewBottomRight);
             standAloneValue = itemView.findViewById(R.id.textViewBottomRight);
-
-
-            //itemView.setOnClickListener(new View.OnClickListener() {
-            //    @Override
-            //    public void onClick(View view) {
-            //        if (rViewInterface != null){
-            //            int pos = getAdapterPosition();
-
-            //            if(pos != RecyclerView.NO_POSITION){
-            //                rViewInterface.onItemClick(pos);
-            //                                        }
-            //        }
-            //    }
-            //});
         }
     }
 }

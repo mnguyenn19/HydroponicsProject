@@ -1,55 +1,47 @@
 package com.example.hponx;
 
+
+import android.os.Bundle;
+
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import android.content.Intent;
-import android.os.Bundle;
+import com.firebase.ui.database.FirebaseRecyclerOptions;
+import com.google.firebase.database.FirebaseDatabase;
 
-import java.util.ArrayList;
-
-//public class NPKRecycleView extends AppCompatActivity implements RViewInterface{
 public class NPKRecycleView extends AppCompatActivity {
-    ArrayList<ElementsModel> elementsModels = new ArrayList<>();
-    int[] elementsImages = {R.drawable.plantgrowth, R. drawable.nitrogenn, R.drawable.phorphous, R.drawable.potassiumk};
+
+    RecyclerView recyclerView;
+    NPK_RecycleViewAdapter npkAdapter;
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_npkrecycle_view);
 
-        RecyclerView recyclerView = findViewById(R.id.hRecyclerView);
-
-        setUpElementsModels();
-        //NPK_RecycleViewAdapter adapter = new NPK_RecycleViewAdapter(this, elementsModels, this);
-        NPK_RecycleViewAdapter adapter = new NPK_RecycleViewAdapter(this, elementsModels);
-        recyclerView.setAdapter(adapter);
+        recyclerView = (RecyclerView)findViewById(R.id.hRecyclerView);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
+
+        FirebaseRecyclerOptions<npk_model> options =
+                new FirebaseRecyclerOptions.Builder<npk_model>()
+                        .setQuery(FirebaseDatabase.getInstance().getReference().child("data"), npk_model.class)
+                        .build();
+
+        npkAdapter = new NPK_RecycleViewAdapter(options);
+        recyclerView.setAdapter(npkAdapter);
     }
 
-    private void setUpElementsModels(){
-        String[] elementsNames = getResources().getStringArray(R.array.elements_full_name);
-        String[] elementsAbbreviations = getResources().getStringArray(R.array.elements_abrev_name);
-        String[] elementsDescriptions = getResources().getStringArray(R.array.elements_descrip);
-
-        for (int i = 0; i < elementsNames.length; i++){
-            elementsModels.add(new ElementsModel(elementsNames[i],
-                    elementsAbbreviations[i],
-                    elementsImages[i],elementsDescriptions[i]));
-        }
-
+    @Override
+    protected void onStart() {
+        super.onStart();
+        npkAdapter.startListening();
     }
 
-    //@Override
-    //public void onItemClick(int position) {
-    //    Intent intent = new Intent(NPKRecycleView.this, RViewInterface.class); //RViewInterface could be wrong
-
-    //    intent.putExtra("NAME", elementsModels.get(position).getElementName());
-    //    intent.putExtra("ABBREV", elementsModels.get(position).getElementAbbreviation());
-    //    intent.putExtra("DESCRIPTION", elementsModels.get(position).getDescription());
-    //    intent.putExtra("IMAGE", elementsModels.get(position).getImage());
-
-    //    startActivity(intent);
-    //}
+    @Override
+    protected void onStop() {
+        super.onStop();
+        npkAdapter.stopListening();
+    }
 }
+
