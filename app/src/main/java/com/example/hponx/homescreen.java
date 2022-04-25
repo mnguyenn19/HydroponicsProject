@@ -11,6 +11,7 @@ public class homescreen extends AppCompatActivity {
 
     LinearLayout monitoring;
     LinearLayout scheduling;
+    LinearLayout LWman;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,6 +20,7 @@ public class homescreen extends AppCompatActivity {
 
         monitoring = findViewById(R.id.layoutFour);
         scheduling = findViewById(R.id.layoutThree);
+        LWman = findViewById(R.id.layoutTwo);
 
         if (getSupportActionBar() != null) {
             getSupportActionBar().hide();
@@ -36,6 +38,14 @@ public class homescreen extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(homescreen.this, Schedule.class);
+                startActivity(intent);
+            }
+        });
+
+        LWman.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(homescreen.this, lightandwater.class);
                 startActivity(intent);
             }
         });

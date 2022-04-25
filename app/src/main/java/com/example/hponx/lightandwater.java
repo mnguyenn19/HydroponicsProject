@@ -13,13 +13,17 @@ import android.view.View;
 import android.widget.Button;
 
 import com.google.android.material.tabs.TabLayout;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
 
 public class lightandwater extends AppCompatActivity {
 
     private TabLayout tabLayout;
     private ViewPager viewPager;
 
-    Button L_ON;
+    private final DatabaseReference databaseReference = FirebaseDatabase.getInstance().getReference();
+
+    Button L_ON, L_OFF, W_ON, W_OFF;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,64 +36,41 @@ public class lightandwater extends AppCompatActivity {
         tabLayout.addTab(tabLayout.newTab().setText("Light"));
         tabLayout.addTab(tabLayout.newTab().setText("Water"));
 
-        //L_ON = findViewById(R.id.LightOn);
-        //L_ON.setOnClickListener(this);
-
-
-
-
-        /*Button L_ON = findViewById(R.id.LightOn);
-        Button L_OFF = findViewById(R.id.LightOff);
-        Button L_BACK = findViewById(R.id.LightBack);
+        /*
+        L_ON = findViewById(R.id.LightOn);
+        L_OFF = findViewById(R.id.LightOff);
 
         L_ON.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i = new Intent(lightandwater.this, MainActivity.class);
-                startActivity(i);
-
-                finish();
+                databaseReference.child("light").child("Power").setValue("on");
             }
         });
+
         L_OFF.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                //?
+                databaseReference.child("light").child("Power").setValue("of");
             }
         });
 
-        L_BACK.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                //?
-            }
-        });
 
-        Button W_ON = findViewById(R.id.WaterOn);
-        Button W_OFF = findViewById(R.id.WaterOff);
-        Button W_BACK = findViewById(R.id.LightBack);
+        W_ON = findViewById(R.id.WaterOn);
+        W_OFF = findViewById(R.id.WaterOff);
 
         W_ON.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                //?
+                databaseReference.child("water").child("Power").setValue("on");
             }
         });
 
         W_OFF.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                //?
+                databaseReference.child("water").child("Power").setValue("on");
             }
-        });
-
-        W_BACK.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                //?
-            }
-        });
-         */
+        });*/
 
 
 
@@ -97,6 +78,7 @@ public class lightandwater extends AppCompatActivity {
             @NonNull
             @Override
             public Fragment getItem(int position) {
+                Fragment fragment = null;
                 switch (position){
                     case 0:
                         Light light = new Light();
