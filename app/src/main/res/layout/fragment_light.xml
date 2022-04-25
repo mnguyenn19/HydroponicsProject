@@ -37,7 +37,7 @@
         android:id="@+id/LightOff"
         android:background="@color/cAccent"
         android:textStyle="bold"/>
-
+    <!--
     <Button
         android:id="@+id/LightBack"
         android:layout_width="141dp"
@@ -48,6 +48,6 @@
         android:background="@color/cAccent"
         android:text="Back"
         android:textStyle="bold" />
-
+    -->
 
 </RelativeLayout>

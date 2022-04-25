@@ -39,7 +39,7 @@
         android:background="@color/cAccent"
         android:text="Off"
         android:textStyle="bold" />
-
+    <!--
     <Button
         android:id="@+id/WaterBack"
         android:layout_width="141dp"
@@ -50,5 +50,5 @@
         android:background="@color/cAccent"
         android:text="Back"
         android:textStyle="bold" />
-
+    -->
 </FrameLayout>

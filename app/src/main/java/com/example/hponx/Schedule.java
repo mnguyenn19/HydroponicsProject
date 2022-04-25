@@ -18,7 +18,7 @@ public class Schedule extends AppCompatActivity {
         schedLight = findViewById(R.id.LevelALight);
         schedMedium = findViewById(R.id.LevelBMedium);
         schedHeavy = findViewById(R.id.LevelCHeavy);
-        schedBack = findViewById(R.id.LevelBack);
+        //schedBack = findViewById(R.id.LevelBack);
 
         schedBack.setOnClickListener(new View.OnClickListener() {
             @Override
