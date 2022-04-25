@@ -20,6 +20,10 @@ public class homescreen extends AppCompatActivity {
         monitoring = findViewById(R.id.layoutFour);
         scheduling = findViewById(R.id.layoutThree);
 
+        if (getSupportActionBar() != null) {
+            getSupportActionBar().hide();
+        }
+
         monitoring.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
