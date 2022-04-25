@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item android:id="@+id/menuAccount"
-        android:icon="@drawable/ic_baseline_home"
+        android:icon="@drawable/ic_baseline_account"
         android:title="@string/account"/>
     <item android:id="@+id/menuSettings"
-        android:icon="@drawable/ic_baseline_home"
+        android:icon="@drawable/ic_baseline_settings"
         android:title="@string/settings"/>
     <item android:id="@+id/menuUpdate"
         android:icon="@drawable/ic_baseline_home"
         android:title="@string/ponx_update"/>
     <item android:id="@+id/menuHelp"
-        android:icon="@drawable/ic_baseline_home"
+        android:icon="@drawable/ic_baseline_help"
         android:title="@string/help"/>
 </menu>
