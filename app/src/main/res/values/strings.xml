@@ -2,7 +2,6 @@
     <string name="app_name">PonX</string>
     <string name="hello">Hello</string>
     <string name="user">User</string>
-    <string name="plant">Plant</string>
     <string name="light_water"><![CDATA[Light & Water]]></string>
     <string name="schedule">Schedule</string>
     <string name="monitor">Monitor</string>
@@ -31,6 +30,24 @@
     <string name="lightly_water">Lightly Water</string>
     <string name="heavy_water">Heavy Water</string>
     <string name="back">Back</string>
+    <string name="basil">Basil</string>
+    <string name="blueberry">Blueberry</string>
+    <string name="beans">Beans</string>
+    <string name="cantaloupe">Cantaloupe</string>
+    <string name="celery">Celery</string>
+    <string name="cilantro">Cilantro</string>
+    <string name="cucumber">Cucumber</string>
+    <string name="grape">Grape</string>
+    <string name="lettuce">Lettuce</string>
+    <string name="raspberry">Raspberry</string>
+    <string name="potato">Potato</string>
+    <string name="squash">Squash</string>
+    <string name="strawberry">Strawberry</string>
+    <string name="tomato">Tomato</string>
+    <string name="watermelon">Watermelon</string>
+    <string name="plant">Plant</string>
+    <string name="select_your_plant">Select your plant</string>
+    <string name="rosemary">Rosemary</string>
 
     <string-array name="elements_full_name">
         <item>Moisture Level</item>

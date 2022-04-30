@@ -2,7 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.hponx">
 
-    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -11,21 +12,69 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.HPonX">
         <activity
-            android:name=".Schedule"
-            android:parentActivityName=".homescreen"
+            android:name=".plant_watermelon"
             android:exported="false" />
         <activity
+            android:name=".plant_tomato"
+            android:exported="false" />
+        <activity
+            android:name=".plant_strawberry"
+            android:exported="false" />
+        <activity
+            android:name=".plant_squash"
+            android:exported="false" />
+        <activity
+            android:name=".plant_raspberry"
+            android:exported="false" />
+        <activity
+            android:name=".plant_potato"
+            android:exported="false" />
+        <activity
+            android:name=".plant_lettuce"
+            android:exported="false" />
+        <activity
+            android:name=".plant_grape"
+            android:exported="false" />
+        <activity
+            android:name=".plant_cucumber"
+            android:exported="false" />
+        <activity
+            android:name=".plant_cilantro"
+            android:exported="false" />
+        <activity
+            android:name=".plant_celery"
+            android:exported="false" />
+        <activity
+            android:name=".plant_cantalope"
+            android:exported="false" />
+        <activity
+            android:name=".plant_blueberry"
+            android:exported="false" />
+        <activity
+            android:name=".plant_beans"
+            android:exported="false" />
+        <activity
+            android:name=".plant_basil"
+            android:exported="false" />
+        <activity
+            android:name=".plant"
+            android:exported="false" />
+        <activity
+            android:name=".Schedule"
+            android:exported="false"
+            android:parentActivityName=".homescreen" />
+        <activity
             android:name=".lightandwater"
-            android:parentActivityName=".homescreen"
-            android:exported="true" />
+            android:exported="true"
+            android:parentActivityName=".homescreen" />
         <activity
             android:name=".NPKRecycleView"
-            android:parentActivityName=".homescreen"
-            android:exported="true" />
+            android:exported="true"
+            android:parentActivityName=".homescreen" />
         <activity
             android:name=".splashscreen"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
-            android:exported="true">
+            android:exported="true"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -37,8 +86,8 @@
             android:exported="true" />
         <activity
             android:name=".MainActivity"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
-            android:exported="true" />
+            android:exported="true"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
     </application>
 
 </manifest>
