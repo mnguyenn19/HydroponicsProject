@@ -13,55 +13,72 @@
         android:theme="@style/Theme.HPonX">
         <activity
             android:name=".plant_plant"
-            android:exported="false" />
+            android:exported="false"
+            android:parentActivityName=".plant" />
         <activity
             android:name=".plant_rosemary"
-            android:exported="false" />
+            android:exported="false"
+            android:parentActivityName=".plant" />
         <activity
             android:name=".plant_watermelon"
-            android:exported="false" />
+            android:exported="false"
+            android:parentActivityName=".plant" />
         <activity
             android:name=".plant_tomato"
-            android:exported="false" />
+            android:exported="false"
+            android:parentActivityName=".plant" />
         <activity
             android:name=".plant_strawberry"
-            android:exported="false" />
+            android:exported="false"
+            android:parentActivityName=".plant" />
         <activity
             android:name=".plant_squash"
-            android:exported="false" />
+            android:exported="false"
+            android:parentActivityName=".plant" />
         <activity
             android:name=".plant_potato"
-            android:exported="false" />
+            android:exported="false"
+            android:parentActivityName=".plant" />
         <activity
             android:name=".plant_lettuce"
-            android:exported="false" />
+            android:exported="false"
+            android:parentActivityName=".plant" />
         <activity
             android:name=".plant_grape"
-            android:exported="false" />
+            android:exported="false"
+            android:parentActivityName=".plant" />
         <activity
             android:name=".plant_cucumber"
-            android:exported="false" />
+            android:exported="false"
+            android:parentActivityName=".plant" />
         <activity
             android:name=".plant_cilantro"
-            android:exported="false" />
+            android:exported="false"
+            android:parentActivityName=".plant" />
         <activity
             android:name=".plant_celery"
-            android:exported="false" />
+            android:exported="false"
+            android:parentActivityName=".plant" />
         <activity
             android:name=".plant_cantaloupe"
-            android:exported="false" />
+            android:exported="false"
+            android:parentActivityName=".plant" />
         <activity
             android:name=".plant_blueberry"
-            android:exported="false" />
+            android:exported="false"
+            android:parentActivityName=".plant" />
         <activity
             android:name=".plant_beans"
-            android:exported="false" />
+            android:exported="false"
+            android:parentActivityName=".plant" />
         <activity
             android:name=".plant_basil"
-            android:exported="false" />
+            android:exported="false"
+            android:parentActivityName=".plant" />
         <activity
             android:name=".plant"
-            android:exported="false" />
+            android:exported="false"
+            android:parentActivityName=".homescreen" />
         <activity
             android:name=".Schedule"
             android:exported="false"
