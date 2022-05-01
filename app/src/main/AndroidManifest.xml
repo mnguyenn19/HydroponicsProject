@@ -60,7 +60,7 @@
             android:name=".plant_basil"
             android:exported="false" />
         <activity
-            android:name=".splashscreen"
+            android:name=".plant"
             android:exported="false" />
         <activity
             android:name=".Schedule"
@@ -75,7 +75,7 @@
             android:exported="true"
             android:parentActivityName=".homescreen" />
         <activity
-            android:name=".plant"
+            android:name=".splashscreen"
             android:exported="true"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar">
             <intent-filter>
