@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/cPrimary"
+    android:background="@drawable/greenthree"
     tools:context=".plant">
 
     <LinearLayout
@@ -15,6 +15,7 @@
         <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            app:cardElevation="50dp"
             android:layout_marginTop="20sp"
             android:layout_marginLeft="10sp"
             android:layout_marginRight="10sp"
@@ -58,6 +59,8 @@
             android:columnCount="2">
 
             <androidx.cardview.widget.CardView
+                android:id="@+id/pbasil"
+                app:cardElevation="50dp"
                 android:layout_gravity="fill"
                 android:layout_rowWeight="1"
                 android:layout_columnWeight="1"
@@ -78,6 +81,8 @@
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
+                android:id="@+id/pbeans"
+                app:cardElevation="50dp"
                 android:layout_gravity="fill"
                 android:layout_rowWeight="1"
                 android:layout_columnWeight="1"
@@ -98,6 +103,8 @@
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
+                android:id="@+id/pblueberry"
+                app:cardElevation="50dp"
                 android:layout_gravity="fill"
                 android:layout_rowWeight="1"
                 android:layout_columnWeight="1"
@@ -118,6 +125,8 @@
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
+                android:id="@+id/pcantaloupe"
+                app:cardElevation="50dp"
                 android:layout_gravity="fill"
                 android:layout_rowWeight="1"
                 android:layout_columnWeight="1"
@@ -138,6 +147,8 @@
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
+                android:id="@+id/pcelery"
+                app:cardElevation="50dp"
                 android:layout_gravity="fill"
                 android:layout_rowWeight="1"
                 android:layout_columnWeight="1"
@@ -158,6 +169,8 @@
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
+                android:id="@+id/pcilantro"
+                app:cardElevation="50dp"
                 android:layout_gravity="fill"
                 android:layout_rowWeight="1"
                 android:layout_columnWeight="1"
@@ -178,6 +191,8 @@
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
+                android:id="@+id/pcucumber"
+                app:cardElevation="50dp"
                 android:layout_gravity="fill"
                 android:layout_rowWeight="1"
                 android:layout_columnWeight="1"
@@ -198,6 +213,8 @@
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
+                android:id="@+id/pgrape"
+                app:cardElevation="50dp"
                 android:layout_gravity="fill"
                 android:layout_rowWeight="1"
                 android:layout_columnWeight="1"
@@ -218,6 +235,8 @@
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
+                android:id="@+id/plettuce"
+                app:cardElevation="50dp"
                 android:layout_gravity="fill"
                 android:layout_rowWeight="1"
                 android:layout_columnWeight="1"
@@ -238,6 +257,8 @@
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
+                android:id="@+id/ppotato"
+                app:cardElevation="50dp"
                 android:layout_gravity="fill"
                 android:layout_rowWeight="1"
                 android:layout_columnWeight="1"
@@ -258,6 +279,8 @@
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
+                android:id="@+id/prosemary"
+                app:cardElevation="50dp"
                 android:layout_gravity="fill"
                 android:layout_rowWeight="1"
                 android:layout_columnWeight="1"
@@ -278,6 +301,8 @@
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
+                android:id="@+id/psquash"
+                app:cardElevation="50dp"
                 android:layout_gravity="fill"
                 android:layout_rowWeight="1"
                 android:layout_columnWeight="1"
@@ -298,6 +323,8 @@
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
+                android:id="@+id/pstrawberry"
+                app:cardElevation="50dp"
                 android:layout_gravity="fill"
                 android:layout_rowWeight="1"
                 android:layout_columnWeight="1"
@@ -318,6 +345,8 @@
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
+                android:id="@+id/ptomato"
+                app:cardElevation="50dp"
                 android:layout_gravity="fill"
                 android:layout_rowWeight="1"
                 android:layout_columnWeight="1"
@@ -338,6 +367,8 @@
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
+                android:id="@+id/pwatermelon"
+                app:cardElevation="50dp"
                 android:layout_gravity="fill"
                 android:layout_rowWeight="1"
                 android:layout_columnWeight="1"
@@ -358,6 +389,8 @@
             </androidx.cardview.widget.CardView>
 
             <androidx.cardview.widget.CardView
+                android:id="@+id/pplant"
+                app:cardElevation="50dp"
                 android:layout_gravity="fill"
                 android:layout_rowWeight="1"
                 android:layout_columnWeight="1"
@@ -376,7 +409,6 @@
                     android:paddingTop="30sp"
                     android:paddingBottom="30sp"/>
             </androidx.cardview.widget.CardView>
-
 
         </GridLayout>
 

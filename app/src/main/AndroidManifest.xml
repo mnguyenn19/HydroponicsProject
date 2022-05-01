@@ -12,6 +12,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.HPonX">
         <activity
+            android:name=".plant_plant"
+            android:exported="false" />
+        <activity
+            android:name=".plant_rosemary"
+            android:exported="false" />
+        <activity
             android:name=".plant_watermelon"
             android:exported="false" />
         <activity
@@ -22,9 +28,6 @@
             android:exported="false" />
         <activity
             android:name=".plant_squash"
-            android:exported="false" />
-        <activity
-            android:name=".plant_raspberry"
             android:exported="false" />
         <activity
             android:name=".plant_potato"
@@ -45,7 +48,7 @@
             android:name=".plant_celery"
             android:exported="false" />
         <activity
-            android:name=".plant_cantalope"
+            android:name=".plant_cantaloupe"
             android:exported="false" />
         <activity
             android:name=".plant_blueberry"
@@ -57,7 +60,7 @@
             android:name=".plant_basil"
             android:exported="false" />
         <activity
-            android:name=".plant"
+            android:name=".splashscreen"
             android:exported="false" />
         <activity
             android:name=".Schedule"
@@ -72,7 +75,7 @@
             android:exported="true"
             android:parentActivityName=".homescreen" />
         <activity
-            android:name=".splashscreen"
+            android:name=".plant"
             android:exported="true"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar">
             <intent-filter>
