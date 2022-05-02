@@ -81,7 +81,7 @@ public class Light<onClick> extends Fragment {
         lightOFF.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                databaseReference.child("light").child("Power").setValue("of");
+                databaseReference.child("light").child("Power").setValue("off");
             }
         });
 

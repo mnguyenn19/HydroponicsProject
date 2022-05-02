@@ -80,7 +80,7 @@ public class Water extends Fragment {
         waterOFF.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                databaseReference.child("water").child("Power").setValue("on");
+                databaseReference.child("water").child("Power").setValue("off");
             }
         });
 
