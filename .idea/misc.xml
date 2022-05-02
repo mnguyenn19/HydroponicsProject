@@ -21,11 +21,22 @@
         <entry key="..\:/Users/deare/AndroidStudioProjects/HPonX/app/src/main/res/layout/activity_main.xml" value="0.10207700101317123" />
         <entry key="..\:/Users/deare/AndroidStudioProjects/HPonX/app/src/main/res/layout/activity_npkrecycle_view.xml" value="0.1953125" />
         <entry key="..\:/Users/deare/AndroidStudioProjects/HPonX/app/src/main/res/layout/activity_plant.xml" value="0.264" />
-        <entry key="..\:/Users/deare/AndroidStudioProjects/HPonX/app/src/main/res/layout/activity_plant_basil.xml" value="0.128125" />
-        <entry key="..\:/Users/deare/AndroidStudioProjects/HPonX/app/src/main/res/layout/activity_plant_beans.xml" value="0.128125" />
+        <entry key="..\:/Users/deare/AndroidStudioProjects/HPonX/app/src/main/res/layout/activity_plant_basil.xml" value="0.16" />
+        <entry key="..\:/Users/deare/AndroidStudioProjects/HPonX/app/src/main/res/layout/activity_plant_beans.xml" value="0.2" />
+        <entry key="..\:/Users/deare/AndroidStudioProjects/HPonX/app/src/main/res/layout/activity_plant_blueberry.xml" value="0.2" />
+        <entry key="..\:/Users/deare/AndroidStudioProjects/HPonX/app/src/main/res/layout/activity_plant_cantaloupe.xml" value="0.4" />
+        <entry key="..\:/Users/deare/AndroidStudioProjects/HPonX/app/src/main/res/layout/activity_plant_celery.xml" value="0.4" />
+        <entry key="..\:/Users/deare/AndroidStudioProjects/HPonX/app/src/main/res/layout/activity_plant_cilantro.xml" value="0.2" />
+        <entry key="..\:/Users/deare/AndroidStudioProjects/HPonX/app/src/main/res/layout/activity_plant_cucumber.xml" value="0.16" />
+        <entry key="..\:/Users/deare/AndroidStudioProjects/HPonX/app/src/main/res/layout/activity_plant_grape.xml" value="0.264" />
+        <entry key="..\:/Users/deare/AndroidStudioProjects/HPonX/app/src/main/res/layout/activity_plant_lettuce.xml" value="0.16" />
         <entry key="..\:/Users/deare/AndroidStudioProjects/HPonX/app/src/main/res/layout/activity_plant_plant.xml" value="0.19972826086956522" />
+        <entry key="..\:/Users/deare/AndroidStudioProjects/HPonX/app/src/main/res/layout/activity_plant_potato.xml" value="0.16" />
         <entry key="..\:/Users/deare/AndroidStudioProjects/HPonX/app/src/main/res/layout/activity_plant_rosemary.xml" value="0.19972826086956522" />
+        <entry key="..\:/Users/deare/AndroidStudioProjects/HPonX/app/src/main/res/layout/activity_plant_squash.xml" value="0.16" />
         <entry key="..\:/Users/deare/AndroidStudioProjects/HPonX/app/src/main/res/layout/activity_plant_strawberry.xml" value="0.19972826086956522" />
+        <entry key="..\:/Users/deare/AndroidStudioProjects/HPonX/app/src/main/res/layout/activity_plant_tomato.xml" value="0.16" />
+        <entry key="..\:/Users/deare/AndroidStudioProjects/HPonX/app/src/main/res/layout/activity_plant_watermelon.xml" value="0.16" />
         <entry key="..\:/Users/deare/AndroidStudioProjects/HPonX/app/src/main/res/layout/activity_schedule.xml" value="0.1453125" />
         <entry key="..\:/Users/deare/AndroidStudioProjects/HPonX/app/src/main/res/layout/activity_splashscreen.xml" value="0.17708333333333334" />
         <entry key="..\:/Users/deare/AndroidStudioProjects/HPonX/app/src/main/res/layout/fragment_light.xml" value="0.2" />
