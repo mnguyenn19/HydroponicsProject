@@ -1,12 +1,15 @@
 package com.example.hponx;
 
 import android.os.Bundle;
-
-import androidx.fragment.app.Fragment;
-
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
+
+import androidx.fragment.app.Fragment;
+
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -55,11 +58,34 @@ public class Water extends Fragment {
         }
     }
 
+    private final DatabaseReference databaseReference = FirebaseDatabase.getInstance().getReference();
+    Button waterON, waterOFF;
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_water, container, false);
-    }
 
+        View view = inflater.inflate(R.layout.fragment_water, container, false);
+
+        waterON = view.findViewById(R.id.WaterOn);
+        waterOFF = view.findViewById(R.id.WaterOff);
+
+        waterON.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                databaseReference.child("water").child("Power").setValue("on");
+            }
+        });
+
+        waterOFF.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                databaseReference.child("water").child("Power").setValue("on");
+            }
+        });
+
+        // Inflate the layout for this fragment
+        //return inflater.inflate(R.layout.fragment_water, container, false);
+        return view;
+    }
 }

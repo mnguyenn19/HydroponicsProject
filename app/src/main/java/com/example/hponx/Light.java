@@ -1,13 +1,15 @@
 package com.example.hponx;
 
 import android.os.Bundle;
-
-import androidx.fragment.app.Fragment;
-
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+
+import androidx.fragment.app.Fragment;
+
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -57,10 +59,34 @@ public class Light<onClick> extends Fragment {
         }
     }
 
+    private final DatabaseReference databaseReference = FirebaseDatabase.getInstance().getReference();
+    Button lightON, lightOFF;
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
+
+        View view = inflater.inflate(R.layout.fragment_light, container, false);
+
+        lightON = (Button) view.findViewById(R.id.LightOn);
+        lightOFF = (Button) view.findViewById(R.id.LightOff);
+
+        lightON.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                databaseReference.child("light").child("Power").setValue("on");
+            }
+        });
+
+        lightOFF.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                databaseReference.child("light").child("Power").setValue("of");
+            }
+        });
+
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_light, container, false);
+        //return inflater.inflate(R.layout.fragment_light, container, false);
+        return view;
     }
 }

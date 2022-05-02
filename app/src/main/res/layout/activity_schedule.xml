@@ -24,6 +24,7 @@
     <Button
         android:layout_width="265dp"
         android:layout_height="wrap_content"
+        android:elevation="20dp"
         android:text="@string/lightly_water"
         android:id="@+id/LevelALight"
         android:background="@color/black"
@@ -34,6 +35,7 @@
     <Button
         android:layout_width="265dp"
         android:layout_height="wrap_content"
+        android:elevation="20dp"
         android:text="@string/medium_water"
         android:id="@+id/LevelBMedium"
         android:background="@color/black"
@@ -45,6 +47,7 @@
     <Button
         android:layout_width="265dp"
         android:layout_height="wrap_content"
+        android:elevation="20dp"
         android:text="@string/heavy_water"
         android:id="@+id/LevelCHeavy"
         android:background="@color/black"

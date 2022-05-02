@@ -1,44 +1,58 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativeLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Light"
-    android:background="@drawable/greentwo">
+    android:background="@drawable/greentwo"
+    tools:context=".Light">
 
     <!-- TODO: Update blank fragment layout -->
+
     <TextView
+        android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="164dp"
+        android:layout_marginBottom="65dp"
         android:text="@string/light_control"
-        android:textSize="40dp"
-        android:layout_marginLeft="60dp"
-        android:layout_marginTop="70dp"
         android:textColor="@color/supacoolcolor"
-        android:layout_marginRight="50dp"
-        android:textStyle="bold"/>
+        android:textSize="38sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/LightOn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/LightOn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="60dp"
-        android:layout_marginTop="150dp"
-        android:layout_marginRight="50dp"
+        android:layout_width="200dp"
+        android:layout_height="80dp"
+        android:layout_marginBottom="38dp"
         android:background="@color/cPrimaryLight"
-        android:text="On"
-        android:textStyle="bold" />
+        android:text="@string/L_on"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/LightOff"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
     <Button
         android:id="@+id/LightOff"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="200dp"
-        android:layout_marginTop="150dp"
-        android:layout_marginRight="50dp"
+        android:layout_width="200dp"
+        android:layout_height="80dp"
+        android:layout_marginBottom="249dp"
         android:background="@color/cAccent"
-        android:text="Off"
-        android:textStyle="bold" />
+        android:text="@string/L_off"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/LightOn" />
     <!--
     <Button
         android:id="@+id/LightBack"
@@ -52,4 +66,4 @@
         android:textStyle="bold" />
     -->
 
-</RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
