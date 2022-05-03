@@ -21,41 +21,55 @@
         android:textColor="@color/supacoolcolor"
         android:textSize="38sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/WaterOn"
+        app:layout_constraintBottom_toTopOf="@+id/WaterLow"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/WaterOn"
+        android:id="@+id/WaterLow"
         android:layout_width="200dp"
         android:layout_height="80dp"
         android:layout_marginBottom="38dp"
         android:background="@color/cPrimaryLight"
-        android:text="@string/W_on"
+        android:text="Low"
         android:elevation="20dp"
         android:textSize="30sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/WaterOff"
+        app:layout_constraintBottom_toTopOf="@+id/WaterMedium"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView" />
 
     <Button
-        android:id="@+id/WaterOff"
+        android:id="@+id/WaterMedium"
         android:layout_width="200dp"
         android:layout_height="80dp"
         android:layout_marginBottom="249dp"
         android:background="@color/cAccent"
-        android:text="@string/W_off"
         android:elevation="20dp"
+        android:text="Medium"
         android:textSize="30sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/WaterOn" />
+        app:layout_constraintTop_toBottomOf="@+id/WaterLow" />
+
+    <Button
+        android:id="@+id/WaterHigh"
+        android:layout_width="200dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="40dp"
+        android:background="@color/cAccent"
+        android:elevation="20dp"
+        android:text="High"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/WaterMedium" />
 
     <!--
     <Button

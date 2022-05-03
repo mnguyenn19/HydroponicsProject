@@ -59,7 +59,7 @@ public class Water extends Fragment {
     }
 
     private final DatabaseReference databaseReference = FirebaseDatabase.getInstance().getReference();
-    Button waterON, waterOFF;
+    Button waterLvlLow, waterLvlMedium, waterLvlHigh;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -67,20 +67,28 @@ public class Water extends Fragment {
 
         View view = inflater.inflate(R.layout.fragment_water, container, false);
 
-        waterON = view.findViewById(R.id.WaterOn);
-        waterOFF = view.findViewById(R.id.WaterOff);
+        waterLvlLow = view.findViewById(R.id.WaterLow);
+        waterLvlMedium = view.findViewById(R.id.WaterMedium);
+        waterLvlHigh = view.findViewById(R.id.WaterHigh);
 
-        waterON.setOnClickListener(new View.OnClickListener() {
+        waterLvlLow.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                databaseReference.child("water").child("Power").setValue("on");
+                databaseReference.child("water").child("Power").setValue("low");
             }
         });
 
-        waterOFF.setOnClickListener(new View.OnClickListener() {
+        waterLvlMedium.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                databaseReference.child("water").child("Power").setValue("off");
+                databaseReference.child("water").child("Power").setValue("medium");
+            }
+        });
+
+        waterLvlHigh.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                databaseReference.child("water").child("Power").setValue("high");
             }
         });
 
