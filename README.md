@@ -45,5 +45,6 @@ App is being developed on Android Studio, so for the best results app should be 
 - `Arduino IDE Download`: (https://www.arduino.cc/en/software)
 #### Install Instructions
 - `Android Studio`: [Install Guide](https://developer.android.com/studio/install)
+- `Wiring Schematics`: [Image](https://raw.githubusercontent.com/mnguyenn19/HydroponicsProject/master/NPK/Schematic.png)
 #### Hydroponics
 - `Hydroponics - PonX Website`: [Link](https://blog.uta.edu/cseseniordesign/2022/04/21/hydroponics/)
