@@ -110,7 +110,9 @@ def setWater(x):
             pass
             
         
+#Schedule function, top one is for demo day demonstration while bottom one is for normal usage        
 schedule.every(20).minutes.do(setwaterIntensity)
+#schedule.every().day.at("09:00").do(setwaterIntensity)
 
 
 if __name__ == '__main__':
